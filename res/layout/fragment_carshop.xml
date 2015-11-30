@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/fragment_bg_color">
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/title_bg_color" >
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/carshop"
+            android:textColor="@color/carshop_textcolor"
+            android:textSize="20sp" />
+    </RelativeLayout>
+	
+    <ScrollView 
+        android:id="@+id/scroll_content"
+        android:layout_below="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layout_content" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/fragment_bg_color"/>
+    </ScrollView>
+   <RelativeLayout 
+       android:id="@+id/layout_bottom_calc"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:background="@color/layout_carshop_calc_bgcolor"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="45dp">
+         <ImageView 
+             android:id="@+id/img_select_all"
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+             android:layout_centerVertical="true"
+             android:textColor="@android:color/white"
+             android:src="@drawable/carshop_check"
+             android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_toRightOf="@+id/img_select_all"
+            android:id="@+id/text_select_all"
+           	android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_all"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:textSize="16sp" />
+         <TextView
+            android:id="@+id/text_calc_all"
+           	android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_all"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:textSize="20sp" />
+         <TextView
+            android:id="@+id/text_go_call"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="@string/go_calc"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:background="@color/go_calc_textcolor"
+            android:textSize="20sp" />
+   </RelativeLayout>
+    
+</RelativeLayout>

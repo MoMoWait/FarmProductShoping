@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cn.edu.fjnu.shop.MainActivity" >
+    
+	<item 
+	    android:id="@+id/feedback"
+	    android:icon="@drawable/feedback" 
+	    android:orderInCategory="3"
+	    android:title="@string/content_feedback"
+	    />
+    <item 
+        android:id="@+id/about" 
+        android:icon="@drawable/about"
+        android:orderInCategory="5"
+        android:title="@string/about"
+        />
+    <item
+         android:id="@+id/exit" 
+         android:icon="@drawable/exit"
+         android:orderInCategory="6"
+         android:title="@string/exit"
+        />
+
+</menu>

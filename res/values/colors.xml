@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="head_catary_background_color">#D7D7D7</color>
+    <color name="line_color">#2f666666</color>
+    <color name="layout_bg_color">#f8f8f8</color>
+    <color name="fragemnt_my_color">#f3f4f6</color>
+    <color name="list_tip_text_color">#5f000000</color>
+    <color name="bottom_main_img_color">#666666</color>
+    <color name="red">#ff0000</color>
+    <color name="exit_dialog_title_color">#686868</color>
+    <color name="add_to_cart_textcolor">#f15353</color>
+    <color name="feedback_hint_textcolor">#DEDEDE</color>
+    <color name="commit_textcolor">#848689</color>
+    <color name="carshop_title_bgcolor">#fbfbfb</color>
+    <color name="carshop_textcolor">#464646</color>
+    <color name="edit_textcolor">#939296</color>
+    <color name="layout_carshop_calc_bgcolor">#323232</color>
+    <color name="go_calc_textcolor">#f15353</color>
+    <color name="fragment_bg_color">#ebebeb</color>
+    <color name="title_bg_color">#fbfbfb</color>
+    <color name="list_item_pressed_color">#febd26</color>
+     <color name="buy_now_background_color">#ff8c00</color>
+</resources>

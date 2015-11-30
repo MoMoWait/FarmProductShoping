@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/img_shop_select"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:src="@drawable/carshop_check" />
+
+    <ImageView
+        android:id="@+id/img_product_photo"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:scaleType="fitXY"
+        android:layout_toRightOf="@+id/img_shop_select"
+        android:src="@drawable/apple" />
+
+    <TextView
+        android:id="@+id/text_product_min_calc"
+        android:layout_below="@+id/img_product_photo"
+        android:layout_alignLeft="@+id/img_product_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/go_calc_textcolor"
+        android:text="@string/about"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_product_name"
+        android:layout_alignTop="@+id/img_product_photo"
+        android:layout_toRightOf="@+id/img_product_photo"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:textColor="@color/carshop_textcolor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_product_price"
+        android:layout_below="@+id/text_product_name"
+        android:layout_toRightOf="@+id/img_product_photo"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:textColor="@color/carshop_textcolor"
+        android:textSize="13sp" />
+
+
+    <EditText
+        android:id="@+id/edit_number"
+        android:layout_below="@+id/text_product_price"
+        android:layout_alignLeft="@+id/text_product_price"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:focusable="false"
+        android:background="@drawable/edit_product_num_cancle_focus"/>
+    
+    <TextView 
+        android:id="@+id/text_delete"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/edit_number"
+        android:layout_alignTop="@+id/edit_number"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:background="@drawable/lib_story_btn_yellow"
+        android:text="@string/delete"
+        android:textColor="#f15353"
+        android:textSize="20sp"/>
+</RelativeLayout>
+
+
+
+

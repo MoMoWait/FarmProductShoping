@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/title_bg_color" >
+
+        <ImageView
+            android:id="@+id/reply_back"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/title_back" />
+
+        <TextView
+            android:id="@+id/text_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="@string/commit"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/commit_textcolor"
+            android:layout_marginRight="10dp"
+            />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="@string/content_feedback"
+            android:textSize="20sp" 
+            android:gravity="center_vertical"
+            />
+    </RelativeLayout>
+	
+    <EditText
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:gravity="top"
+        android:id="@+id/edit_content_feedback"
+        android:background="@drawable/bg_feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textSize="16sp"
+        android:textColorHint="#3f000000"
+        android:hint="@string/tip_feedback_conent"/>
+    
+    <EditText
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/edit_way_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:background="@drawable/bg_feedback_way"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textColorHint="#3f000000"
+        android:hint="@string/tip_feedback_contentway"/>
+</LinearLayout>

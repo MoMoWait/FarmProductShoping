@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg_color"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/title_bg_color" >
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/carshop"
+            android:textColor="@color/carshop_textcolor"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <ImageView 
+        android:layout_marginTop="20dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/cart_no_data"/>
+    
+    <TextView 
+        android:id="@+id/text_cart_no_data"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/cart_no_data_rect_icon"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/cart_no_data"/>
+    <!-- 
+      <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/cart_no_data_arrow"/>
+         -->
+      <!--  
+      <TextView 
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/cart_may_like"/>
+        -->
+</LinearLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg_color" >
+
+    <LinearLayout
+        android:id="@+id/layout_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/title_bg_color" >
+
+            <ImageView
+                android:id="@+id/img_commit_back"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/title_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/commit_order"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gift_card_top" />
+
+        <RelativeLayout
+            android:id="@+id/layout_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fffaf3" >
+
+            <ImageView
+                android:id="@+id/img_name"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/address_name_icon" />
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/img_name"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/img_name"
+                android:text="@string/gaofei"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/img_phone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/text_name"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/text_name"
+                android:src="@drawable/address_mobile_icon" />
+
+            <TextView
+                android:id="@+id/text_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/img_phone"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/img_phone"
+                android:text="@string/phone"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/img_name"
+                android:layout_below="@+id/img_name"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/address"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img_next_up"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/list_more_next" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/gift_card_bottom" />
+
+        <RelativeLayout
+            android:id="@+id/layout_porduct_money_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white" >
+
+            <TextView
+                android:id="@+id/text_product_money"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/product_money"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_product_money_red"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/text_product_money"
+                android:layout_marginRight="10dp"
+                android:text="@string/product_money"
+                android:textColor="#f15353"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/list_item_background" >
+
+            <TextView
+                android:id="@+id/text_transport_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/comm_product_date"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_expire_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/img_next"
+                android:text="@string/ex_pire_time"
+                android:textColor="#f15353"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img_next"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/list_more_next" />
+        </RelativeLayout>
+        
+         <RelativeLayout
+            android:id="@+id/layout_city"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/list_item_background" >
+
+            <TextView
+                android:id="@+id/text_city_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/comm_product_city"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/img_city_next"
+                android:text="@string/ex_pire_time"
+                android:textColor="#f15353"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img_city_next"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/list_more_next" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom_commit_order"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#303031"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <TextView
+            android:id="@+id/text_real_money"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:text="@string/transport_money"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/img_commit_order"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_weight="2"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_suborder_nor" />
+    </LinearLayout>
+
+</RelativeLayout>

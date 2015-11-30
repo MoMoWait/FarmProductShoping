@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="right"
+        android:layout_marginRight="10dp"
+        android:text="@string/transation_success"
+        android:textColor="#ff4501"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_no"
+            android:textColor="#8f000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_order_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ex_order_no"
+            android:textColor="#8f000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_date"
+            android:textColor="#8f000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ex_order_date"
+            android:textColor="#8f000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_product"
+            android:textColor="#8f000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_order_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ex_order_product"
+            android:textColor="#8f000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+     <TextView
+        android:id="@+id/text_real_pay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="right"
+        android:layout_marginRight="10dp"
+        android:text="@string/access_product_num"
+        android:textColor="#ff4501"
+        android:textSize="16sp" />
+
+       <TextView
+        android:id="@+id/text_away_access"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edit_text_normal"
+        android:text="@string/away_access"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+</LinearLayout>
