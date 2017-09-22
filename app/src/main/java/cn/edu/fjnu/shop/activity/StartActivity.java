@@ -10,6 +10,7 @@ public class StartActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
 		startActivity(new Intent(StartActivity.this, MainActivity.class));
 		overridePendingTransition(R.anim.activity_enter_right, R.anim.activity_enter_left);
 		this.finish();

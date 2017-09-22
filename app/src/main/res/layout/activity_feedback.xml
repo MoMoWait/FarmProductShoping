@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fragment_bg_color"
-    android:orientation="vertical" >
-
+    android:orientation="vertical">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -41,11 +40,15 @@
 	
     <EditText
         android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
         android:gravity="top"
         android:id="@+id/edit_content_feedback"
-        android:background="@drawable/bg_feedback_content"
+        android:background="@drawable/edit_text_normal"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:textSize="16sp"
@@ -54,12 +57,16 @@
     
     <EditText
         android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
         android:paddingLeft="10dp"
         android:id="@+id/edit_way_feedback"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:singleLine="true"
-        android:background="@drawable/bg_feedback_way"
+        android:background="@drawable/edit_text_normal"
         android:gravity="center_vertical"
         android:textSize="16sp"
         android:textColorHint="#3f000000"

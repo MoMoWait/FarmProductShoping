@@ -29,7 +29,8 @@
             android:focusable="true"
             android:gravity="center_vertical"
             android:inputType="text"
-            android:paddingLeft="2dp" />
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"/>
 
         <ImageView
             android:id="@+id/img_shop_search"
